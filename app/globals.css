@@ -1,26 +1,90 @@
 @import "tailwindcss";
 
+/* =========================
+   Light mode (default)
+   ========================= */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand */
+  --primary: #D4A574;
+  --primary-hover: #8B5A2B;
+  --primary-light: #E6F6F5;
+
+  --accent: #D4A574;
+  --accent-light: #EAF7FC;
+
+  /* Layout */
+  --background: #FFFFFF;   /* page background */
+  --surface: #FFFFFF;      /* cards, panels */
+  --muted: #F1F5F9;        /* subtle sections */
+  --border: #E5E7EB;
+  --header: #ffffff66;        /* header background */
+
+  /* Text */
+  --foreground: #8B5A2B;   /* main text */
+  --text-muted: #D4A574;
 }
 
 @theme inline {
+  --color-primary: var(--primary);
+   --color-primary-light: var(--primary-light);
+  --color-primary-hover: var(--primary-hover);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-header: var(--header);
+}
+
+/* =========================
+   Dark mode overrides
+   ========================= 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0F172A;
+    --surface: #111827;
+    --muted: #0B1220;
+    --border: #1F2937;
+
+    --foreground: #F9FAFB;
+    --text-muted: #CBD5E1;
+  }
+}
+  */
+
+/* =========================
+   Tailwind theme bridge
+   ========================= */
+@theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* =========================
+   Base skeleton look
+   ========================= */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-work-sans), sans-serif;
 }
+
+h1, h2, h3, .font-heading {
+  font-family: var(--font-fraunces), serif;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+

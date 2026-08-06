@@ -1,0 +1,8 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="128" cy="128" r="128" fill="#D9CFB8"/>
+  <circle cx="128" cy="128" r="108" fill="none" stroke="#3B2A20" stroke-width="6"/>
+  <!-- ground -->
+  <path d="M20 170c30-20 60-15 90 0s70 15 100-5v70H20z" fill="#5B7444"/>
+  <!-- simple cow silhouette -->
+  <path d="M90 120c-8-6-20-4-24 4-4 8 0 16 8 18l4 30h10l2-26h20l4 26h10l4-32c8-2 12-10 8-18-4-8-16-10-24-4-6-4-16-4-22 2z" fill="#3B2A20"/>
+</svg>
