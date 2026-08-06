@@ -83,14 +83,14 @@ export function HeroFullBackground({
             <div className="text-sm text-white/40 hidden md:block tracking-wide">{kicker}</div>
           )}
 
-          <div className="md:text-[45px] text-[30px] font-extrabold mb-4 text-white font-heading">
+          <div className="md:text-[45px] text-[30px] font-extrabold mb-4 text-white leading-[1.3] md:leading-relaxed font-heading">
             {titleBefore}
             {highlight && <span className="text-primary"> {highlight} </span>}
             {titleAfter}
           </div>
 
           {description && (
-            <p className="w-full md:max-w-[397px] mb-[40px] text-sm text-white ">
+            <p className="w-full md:max-w-[397px] md:mb-[40px] mb-[30px] text-sm text-white ">
               {description}
             </p>
           )}
