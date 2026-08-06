@@ -5,9 +5,9 @@ export default function FounderSectionComplex() {
       <div className="mx-auto max-w-7xl md:px-6 px-4 lg:px-8 grid gap-12 lg:grid-cols-2 items-center">
         <div>
           <img
-            src="/Agromajestic-Images/Director.jpg"
+            src="/Agromajestic-Images/Majetic-Founder.jpeg"
             alt="Оснивач"
-            className=" object-cover w-full h-[520px]"
+            className=" object-[center_20px] w-full h-[420px]"
           />
         </div>
 

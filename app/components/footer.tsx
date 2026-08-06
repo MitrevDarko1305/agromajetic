@@ -10,8 +10,8 @@ export default function Footer() {
       </div>
 
         <div className="text-sm sm:text-right space-y-1">
-          <p>info@agromajetic.rs</p>
-          <p>+381 XX XXX XXXX</p>
+          <p>Mirzetmicunmajetic@gmail.com</p>
+          <p>+387 62 414 256</p>
         </div>
       </div>
 
