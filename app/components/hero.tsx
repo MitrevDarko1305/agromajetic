@@ -61,7 +61,7 @@ export function HeroFullBackground({
   };
 
   return (
-    <section className="relative h-[40dvh] sm:h-screen">
+    <section className="relative h-[50dvh] sm:h-screen">
       <div className={`relative h-full ${bgBehavior} flex items-center text-white pr-[5%] md:pr-[5%] md:pl-[5%] pl-[5%]`}>
         {/* Mobile image */}
         <img
