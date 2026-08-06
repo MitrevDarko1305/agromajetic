@@ -50,7 +50,7 @@ export default function AboutSectionScroll() {
 
   return (
     <section className="bg-surface py-16 sm:py-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl md:px-6 px-4 lg:px-8">
         <div className="mx-auto max-w-5xl  text-left mb-12">
           <h2 className="text-foreground/50 font-medium leading-7">Naša priča</h2>
           <p className="mt-2 text-[40px] font-heading font-extrabold font-leading mb-4 text-foreground">
@@ -75,13 +75,13 @@ export default function AboutSectionScroll() {
       </div>
 
       <div className="overflow-x-auto scrollbar-hide">
-       <div className="flex gap-4 w-max px-6">
+       <div className="flex gap-4 w-max md:px-6 px-4">
         {images.map((src, i) => (
          <img
         key={i}
         src={src}
         alt="Фарма"
-        className="h-80 w-100 flex-shrink-0 object-cover"
+        className="md:h-80 h-50 md:w-100 w-60 flex-shrink-0 object-cover"
         />
       ))}
      </div>

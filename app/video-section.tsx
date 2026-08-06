@@ -28,17 +28,17 @@ export default function VideoSection() {
   };
 
   return (
-    <section className="bg-muted py-16 sm:py-24 space-y-20">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="bg-muted pt-4 pb-16 sm:py-24 space-y-20">
+      <div className="mx-auto max-w-7xl md:px-6 px-4 lg:px-8">
         {/* Image grid left, text right */}
         <div className="grid gap-10 lg:grid-cols-2 items-center">
-          <div className="grid grid-cols-4 gap-3">
+          <div className="grid sm:grid-cols-4 gap-3 mb-8 e sm:mb-0">
             {galleryImages.map((src, i) => (
               <img
                 key={i}
                 src={src}
                 alt="Фарма"
-                className="h-36 sm:h-44 w-full object-cover"
+                className="h-50 sm:h-44 w-full object-cover"
               />
             ))}
           </div>
@@ -47,7 +47,7 @@ export default function VideoSection() {
             <h2 className="text-foreground/50 font-medium leading-7">
               Svakodnevni rad 
             </h2>
-            <p className="mt-2 text-[32px] font-heading font-heading font-extrabold mb-4 text-foreground">
+            <p className="mt-2 text-[40px] font-heading font-heading font-extrabold mb-4 text-foreground">
               Život na <span className="text-primary">farmi</span>
             </p>
             <p className="text-base leading-7 text-foreground/70">
@@ -63,7 +63,7 @@ export default function VideoSection() {
     <h2 className="text-foreground/50 font-medium leading-7">
       Pogledajte našu farmu
     </h2>
-    <p className="mt-2 text-[32px] font-heading font-extrabold mb-4 text-foreground">
+    <p className="mt-2 text-[40px] font-heading font-extrabold mb-4 text-foreground">
       Farma u <span className="text-primary">pokretu</span>
     </p>
     <p className="text-base leading-7 text-foreground/70 mb-8">

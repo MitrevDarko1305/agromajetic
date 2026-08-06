@@ -2,7 +2,7 @@ export default function FounderSectionComplex() {
 
   return (
     <section className="bg-muted py-16 sm:py-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 grid gap-12 lg:grid-cols-2 items-center">
+      <div className="mx-auto max-w-7xl md:px-6 px-4 lg:px-8 grid gap-12 lg:grid-cols-2 items-center">
         <div>
           <img
             src="/Agromajestic-Images/Director.jpg"
@@ -15,7 +15,7 @@ export default function FounderSectionComplex() {
           <h2 className="text-foreground/50 font-medium leading-7">
               Iza svake isporuke
           </h2>
-          <p className="mt-2 text-[36px] font-heading font-medium mb-6 text-foreground">
+          <p className="mt-2 text-[40px] font-heading font-extrabold  mb-6 text-foreground">
              Osnivač
           </p>
           <p className="text-base leading-7 text-foreground/70 mb-4">

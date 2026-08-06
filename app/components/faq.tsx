@@ -48,18 +48,18 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="bg-surface py-16 sm:py-24">
-      <div className="mx-auto max-w-3xl px-6 lg:px-8">
+    <section className="bg-surface pt-20 pb-16 sm:py-24">
+      <div className="mx-auto max-w-3xl px-4 md:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-foreground/50 font-medium leading-7">
             Pitanja i odgovori
           </h2>
-          <p className="mt-2 text-[32px] font-heading font-extrabold text-foreground">
+          <p className="mt-2 text-[40px] leading-[1.5] font-heading font-extrabold text-foreground">
             Često postavljana <span className="text-primary">pitanja</span>
           </p>
         </div>
 
-        <div className="divide-y divide-border">
+        <div className="divide-y divide-border sm:mt-0 mt-12">
           {faqs.map((faq, i) => (
             <div key={i} className="py-5">
               <button
@@ -85,7 +85,7 @@ export default function FAQSection() {
                 }`}
               >
                 <div className="overflow-hidden">
-                  <p className="text-sm leading-7 text-foreground/70">
+                  <p className="text-sm sm:leading-7 leading-6 text-foreground/70">
                     {faq.answer}
                   </p>
                 </div>
