@@ -20,7 +20,7 @@ export function ScrollToTopButton() {
     <button
       onClick={scrollToTop}
       aria-label="Nazad na vrh"
-      className={`fixed bottom-6 right-6 cursor-pointer z-50 flex h-11 w-11 items-center justify-center rounded-full bg-primary text-white shadow-lg transition-all duration-300 hover:bg-foreground ${
+      className={`fixed bottom-6 right-6 cursor-pointer z-50 flex h-11 w-11 items-center justify-center rounded-full bg-primary hover:text-primary-hover text-white shadow-lg transition-all duration-300 hover:bg-background ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
       }`}
     >
