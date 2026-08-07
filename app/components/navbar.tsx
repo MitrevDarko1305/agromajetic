@@ -100,34 +100,37 @@ export default function Navbar() {
 
       {/* Mobile menu panel */}
       <div
-        className={[
-          "lg:hidden z-50 overflow-hidden transition-[max-height,opacity] duration-300",
-          mobileOpen ? "max-h-[520px] opacity-100" : "max-h-0 opacity-0",
-        ].join(" ")}
-      >
-        <div className="px-[20px] pb-[18px] pt-[6px] border-t border-black/10 bg-white">
-          <nav className="flex flex-col gap-4">
-            {links.map((l) => (
-              <Link
-                key={l.href}
-                href={l.href}
-                className="text-sm tracking-wide text-foreground/80 hover:text-primary"
-                onClick={() => setMobileOpen(false)}
-              >
-                {l.label}
-              </Link>
-            ))}
+       className={`lg:hidden z-50 grid transition-all duration-300 ease-out ${
+       mobileOpen
+      ? "grid-rows-[1fr] opacity-100"
+      : "grid-rows-[0fr] opacity-0 pointer-events-none"
+     }`}
+   >
+     <div className="overflow-hidden">
+       <div className="px-[20px] pb-[18px] pt-[6px] border-t border-black/10 bg-white">
+        <nav className="flex flex-col gap-4">
+        {links.map((l) => (
+          <Link
+            key={l.href}
+            href={l.href}
+            className="text-sm tracking-wide text-foreground/80 hover:text-primary"
+            onClick={() => setMobileOpen(false)}
+          >
+            {l.label}
+          </Link>
+        ))}
 
-            <Link
-              href="/contact"
-              className="mt-2 inline-flex items-center justify-center px-4 py-2 bg-primary rounded-lg text-sm tracking-wide text-white hover:bg-foreground transition-colors duration-200"
-              onClick={() => setMobileOpen(false)}
-            >
-              Contact
-            </Link>
-          </nav>
-        </div>
-      </div>
+        <Link
+          href="/contact"
+          className="mt-2 inline-flex items-center justify-center px-4 py-2 bg-primary rounded-lg text-sm tracking-wide text-white hover:bg-foreground transition-colors duration-200"
+          onClick={() => setMobileOpen(false)}
+        >
+          Contact
+        </Link>
+      </nav>
+    </div>
+  </div>
+</div>
 
       {/* Optional overlay (click to close) */}
       {mobileOpen && (

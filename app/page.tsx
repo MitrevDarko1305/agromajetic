@@ -8,6 +8,7 @@ import FAQSection from "./components/faq";
 import BlogPreviewSection from "./components/blog";
 import CTASection from "./components/cta";
 import Footer from "./components/footer";
+import { ScrollToTopButton } from "./components/floating-button";
 
 
 
@@ -36,6 +37,7 @@ export default async function Page()
         <CTASection />
         <BlogPreviewSection />
         <Footer />
+        <ScrollToTopButton/>
       </main>
     </>
   );

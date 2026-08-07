@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, Work_Sans } from "next/font/google";
 import "./globals.css";
+import SmoothScroll from "./components/lenis-scroll";
 
 const workSans = Work_Sans({
   variable: "--font-work-sans",
@@ -55,7 +56,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${fraunces.variable} ${workSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <SmoothScroll/>
+        {children}</body>
     </html>
   );
 }
