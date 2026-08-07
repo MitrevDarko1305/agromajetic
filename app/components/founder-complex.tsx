@@ -1,7 +1,7 @@
 export default function FounderSectionComplex() {
 
   return (
-    <section className="bg-muted py-16 sm:py-24">
+    <section className="bg-muted py-16 sm:py-24" id="founder">
       <div className="mx-auto max-w-7xl md:px-6 px-4 lg:px-8 grid gap-12 lg:grid-cols-2 items-center">
         <div>
           <img

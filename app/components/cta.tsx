@@ -30,7 +30,7 @@ export default function CTASection() {
   }
 
   return (
-    <section className="bg-primary py-16 sm:py-20">
+    <section className="bg-primary py-16 sm:py-20" id="cta">
       <div className="mx-auto max-w-5xl px-6 lg:px-8 grid gap-12 sm:grid-cols-2 items-center">
         <div>
           <p className="text-[42px] leading-[1.2] font-heading font-extrabold text-white mb-4">

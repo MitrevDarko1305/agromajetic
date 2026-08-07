@@ -6,7 +6,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-foreground text-white/70 py-10">
+    <footer className="bg-foreground text-white/70 py-10" id="footer">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
         <div>
           <p className="font-heading text-xl text-white mb-2">Agro Majetić</p>

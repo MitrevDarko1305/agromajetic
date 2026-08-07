@@ -49,7 +49,7 @@ export default function AboutSectionScroll() {
   }, []);
 
   return (
-    <section className="bg-surface py-16 sm:py-24">
+    <section className="bg-surface py-16 sm:py-24" id="about">
       <div className="mx-auto max-w-7xl md:px-6 px-4 lg:px-8">
         <div className="mx-auto max-w-5xl  text-left mb-12">
           <h2 className="text-foreground/50 font-medium leading-7">Naša priča</h2>

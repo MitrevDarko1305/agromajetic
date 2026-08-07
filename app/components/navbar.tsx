@@ -27,11 +27,11 @@ export default function Navbar() {
 
   const links = [
     { href: "/", label: "Početna" },
-    { href: "/services", label: "Usluge" },
-    { href: "/about", label: "O nama" },
-    { href: "/faq", label: "Često postavljana pitanja"},
-    { href: "/appointment", label: "Zakazivanje" },
-    { href: "/blog", label: "Blog" },
+    { href: "/#about", label: "O nama" },
+    { href: "/#founder", label: "Osnivač" },
+    { href: "/#faq", label: "Često postavljana pitanja"},
+    { href: "/#cta", label: "Zakazivanje" },
+    { href: "/#blog", label: "Blog" },
   ];
 
   return (
@@ -57,7 +57,7 @@ export default function Navbar() {
           ))}
           <li>
             <Link
-              href="/contact"
+              href="/#footer"
               className="inline-flex font-bold items-center justify-center px-4 py-2 bg-primary  text-sm tracking-wide text-white hover:bg-foreground transition-colors duration-200"
             >
               Contact

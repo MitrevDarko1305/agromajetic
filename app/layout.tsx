@@ -15,6 +15,7 @@ const fraunces = Fraunces({
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
+
 export const metadata: Metadata = {
   title: "Agromajetic — Pouzdan partner u mlečnoj industriji",
   description: "Agro-Majetić — pouzdan partner u mlečnoj industriji. Uzgoj mlečnih krava i tovnih bikova od 2016. godine.",

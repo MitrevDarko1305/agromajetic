@@ -48,7 +48,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="bg-surface pt-20 pb-16 sm:py-24">
+    <section className="bg-surface pt-20 pb-16 sm:py-24" id="faq">
       <div className="mx-auto max-w-3xl px-4 md:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-foreground/50 font-medium leading-7">
