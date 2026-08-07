@@ -19,7 +19,7 @@ export default function FounderSectionComplex() {
              Osnivač
           </p>
           <p className="text-base leading-7 text-foreground/70 sm:mb-6 mb-8 ">
-            Mesut Majetić je 2016. godine osnovao Agro-Majetić sa ciljem da izgradi farmu na temeljima kvaliteta i poverenja. Ono što je počelo kao mali broj grla, vremenom je preraslo u stabilnu farmu koja opslužuje brojne partnere u mlečnoj industriji.
+            Mesud Majetić je 2016. godine osnovao Agro-Majetić sa ciljem da izgradi farmu na temeljima kvaliteta i poverenja. Ono što je počelo kao mali broj grla, vremenom je preraslo u stabilnu farmu koja opslužuje brojne partnere u mlečnoj industriji.
           </p>
           <p className="text-base leading-7 text-foreground/70 sm:mb-6 mb-8">
             Svakodnevni rad na farmi — briga o stoci, planiranje isporuka, saradnja sa partnerima — vodi lično, uz uverenje da poslovni uspeh počiva na direktnom odnosu i pouzdanosti, a ne samo na brojkama.
