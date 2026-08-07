@@ -30,10 +30,10 @@ export default function CTASection() {
   }
 
   return (
-    <section className="bg-primary py-16 sm:py-20" id="cta">
-      <div className="mx-auto max-w-5xl px-6 lg:px-8 grid gap-12 sm:grid-cols-2 items-center">
+    <section className="bg-primary py-12 sm:py-20" id="cta">
+      <div className="mx-auto max-w-5xl sm:px-6 px-4 lg:px-8 grid gap-12 sm:grid-cols-2 items-center">
         <div>
-          <p className="text-[42px] leading-[1.2] font-heading font-extrabold text-white mb-4">
+          <p className="text-[35px] sm:text-[40px] leading-[1.2] font-heading font-extrabold text-white sm:mb-4 mb-10">
             Spremni za pouzdano partnerstvo?
           </p>
           <p className="text-base leading-7 text-white/85 max-w-md">
@@ -74,7 +74,7 @@ export default function CTASection() {
               <button
                 type="submit"
                 disabled={status === "loading"}
-                className="w-full  bg-white px-6 py-3 text-sm font-extrabold cursor-pointer text-primary hover:bg-foreground hover:text-white transition-colors duration-200 disabled:opacity-50"
+                className="w-full  bg-white px-6 py-3 sm:mt-0 mt-8 text-sm font-extrabold cursor-pointer text-primary hover:bg-foreground hover:text-white transition-colors duration-200 disabled:opacity-50"
               >
                 {status === "loading" ? "Slanje..." : "Pošaljite poruku"}
               </button>

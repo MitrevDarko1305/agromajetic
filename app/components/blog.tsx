@@ -23,12 +23,12 @@ export default function BlogPreviewSection() {
   return (
     <section className="bg-muted py-16 sm:py-24" id="blog">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mb-12">
+        <div className="sm:mb-12 mb-12">
           <h2 className="text-foreground/50 font-medium leading-7">Iz naše farme</h2>
-          <p className="mt-2 text-[32px] font-heading font-extrabold text-foreground">
+          <p className="sm:mt-2 mt-0 text-[32px] font-heading font-extrabold text-foreground">
             Blog
           </p>
-          <p className="mt-4 text-base leading-relaxed text-foreground/70 max-w-xl">
+          <p className="sm:mt-4 mt-6 text-base leading-relaxed text-foreground/70 max-w-xl">
             Kratki uvidi iz našeg svakodnevnog rada — o stoci, procesu i onome što
             stoji iza svake isporuke.
           </p>
