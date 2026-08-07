@@ -75,10 +75,10 @@ export default function Navbar() {
         >
           {/* simple icon */}
           <span className="sr-only">Toggle menu</span>
-          <div className="relative h-5 w-6">
+          <div className="relative h-5 w-6 z-60 ">
             <span
               className={[
-                "absolute left-0 top-0 h-[2px] w-6 bg-foreground transition-transform duration-200",
+                "absolute left-0 top-0 h-[2px] w-6 bg-foreground  transition-transform duration-200",
                 mobileOpen ? "translate-y-[9px] rotate-45" : "",
               ].join(" ")}
             />
@@ -100,46 +100,33 @@ export default function Navbar() {
 
       {/* Mobile menu panel */}
       <div
-       className={`lg:hidden z-50 grid transition-all duration-300 ease-out ${
-       mobileOpen
-      ? "grid-rows-[1fr] opacity-100"
-      : "grid-rows-[0fr] opacity-0 pointer-events-none"
-     }`}
-   >
-     <div className="overflow-hidden">
-       <div className="px-[20px] pb-[18px] pt-[6px] border-t border-black/10 bg-white">
-        <nav className="flex flex-col gap-4">
-        {links.map((l) => (
-          <Link
-            key={l.href}
-            href={l.href}
-            className="text-sm tracking-wide text-foreground/80 hover:text-primary"
-            onClick={() => setMobileOpen(false)}
-          >
-            {l.label}
-          </Link>
-        ))}
-
+  className={`lg:hidden z-50 fixed inset-0 backdrop-blur-lg transition-all duration-300 ease-out ${
+    mobileOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+  }`}
+>
+  <div className="h-full backdrop-blur-sm bg-white/50 flex flex-col justify-center px-6 border-t border-black/10">
+    <nav className="flex flex-col items-center justify-center sm:gap-4 gap-10 font-extrabold capitalise">
+      {links.map((l) => (
         <Link
-          href="/contact"
-          className="mt-2 inline-flex items-center justify-center px-4 py-2 bg-primary rounded-lg text-sm tracking-wide text-white hover:bg-foreground transition-colors duration-200"
+          key={l.href}
+          href={l.href}
+          className="text-xl font-heading tracking-wide text-foreground hover:text-primary"
           onClick={() => setMobileOpen(false)}
         >
-          Contact
+          {l.label}
         </Link>
-      </nav>
-    </div>
+      ))}
+
+      <Link
+        href="/contact"
+        className="mt-2 inline-flex items-center justify-center px-4 py-2 bg-primary text-sm tracking-wide text-white hover:bg-foreground transition-colors duration-200"
+        onClick={() => setMobileOpen(false)}
+      >
+        Contact
+      </Link>
+    </nav>
   </div>
 </div>
-
-      {/* Optional overlay (click to close) */}
-      {mobileOpen && (
-        <button
-          aria-label="Close menu overlay"
-          className="lg:hidden z-40  bg-black/20"
-          onClick={() => setMobileOpen(false)}
-        />
-      )}
     </header>
   );
 }
