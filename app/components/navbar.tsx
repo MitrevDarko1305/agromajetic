@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import ThemeToggle from "./theme-toggle";
 
 export default function Navbar() {
   
@@ -41,7 +42,7 @@ export default function Navbar() {
        <Link
         href="/#hero"
         className={[
-        "text-[25px] text-primary font-extrabold hover:text-foreground tracking-tight transition-colors duration-300 font-heading",
+        "text-[25px] text-primary dark font-extrabold hover:text-foreground tracking-tight transition-colors duration-300 font-heading",
         ].join(" ")}
       >
        Agro Majetic{" "}
@@ -62,6 +63,7 @@ export default function Navbar() {
             >
               Contact
             </Link>
+            <ThemeToggle/>
           </li>
         </ul>
 

@@ -24,6 +24,19 @@
   --text-muted: #D4A574;
 }
 
+/*
+.dark {
+  --background: #211D16;
+  --surface: #2B2620;
+  --muted: #33301F;
+  --border: #453F2E;
+  --foreground: #EDE6D6;
+  --primary: #D4A574;
+  --primary-hover: #F2FAF8;
+}
+  */
+
+
 @theme inline {
   --color-primary: var(--primary);
    --color-primary-light: var(--primary-light);
