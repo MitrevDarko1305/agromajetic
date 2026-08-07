@@ -22,7 +22,7 @@ export default async function Page()
         <Navbar/>
          <HeroFullBackground
         backgroundImage="Agromajestic-Images/Majestic-Hero.jpeg"
-        backgroundImageMobile="/Agromajestic-Images/Majetic-3.jpeg"
+        backgroundImageMobile="/Agromajestic-Images/Majestic-Hero.jpeg"
         kicker="Vaš partner u mlecnoj industriji"
         titleBefore="Stoka i Mleko —"
         highlight="Pouzdano"

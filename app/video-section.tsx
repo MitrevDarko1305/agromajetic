@@ -28,7 +28,7 @@ export default function VideoSection() {
   };
 
   return (
-    <section className="bg-muted pt-4 pb-16 sm:py-24 space-y-20">
+    <section className="bg-muted pt-4 pb-16 sm:py-24 space-y-16">
       <div className="mx-auto max-w-7xl md:px-6 px-4 lg:px-8">
         {/* Image grid left, text right */}
         <div className="grid gap-10 lg:grid-cols-2 items-center">
@@ -47,7 +47,7 @@ export default function VideoSection() {
             <h2 className="text-foreground/50 font-medium leading-7">
               Svakodnevni rad 
             </h2>
-            <p className="mt-2 text-[40px] font-heading font-heading font-extrabold mb-4 text-foreground">
+            <p className="sm:mt-2 mt-0 text-[35px] sm:text-[40px] font-heading font-heading font-extrabold mb-4 text-foreground">
               Život na <span className="text-primary">farmi</span>
             </p>
             <p className="text-base leading-7 text-foreground/70">
@@ -57,13 +57,13 @@ export default function VideoSection() {
         </div>
 
         {/* Video left, text right */}
-<div className="grid gap-10 lg:grid-cols-2 items-center mt-20">
+<div className="grid gap-10 lg:grid-cols-2 items-center sm:mt-20 mt-16">
 
   <div>
     <h2 className="text-foreground/50 font-medium leading-7">
       Pogledajte našu farmu
     </h2>
-    <p className="mt-2 text-[40px] font-heading font-extrabold mb-4 text-foreground">
+    <p className="sm:mt-2 mt-0 sm:text-[40px] text-[35px] font-heading font-extrabold mb-4 text-foreground">
       Farma u <span className="text-primary">pokretu</span>
     </p>
     <p className="text-base leading-7 text-foreground/70 mb-8">

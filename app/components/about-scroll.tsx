@@ -53,13 +53,13 @@ export default function AboutSectionScroll() {
       <div className="mx-auto max-w-7xl md:px-6 px-4 lg:px-8">
         <div className="mx-auto max-w-5xl  text-left mb-12">
           <h2 className="text-foreground/50 font-medium leading-7">Naša priča</h2>
-          <p className="mt-2 text-[40px] font-heading font-extrabold font-leading mb-4 text-foreground">
+          <p className="mt-2 text-[35px] sm:text-[40px] font-heading font-extrabold font-leading mb-4 text-foreground">
             О <span className="text-primary font-extrabold font-leading">Agro-Majetić</span>
           </p>
-          <p className="text-base leading-7 text-foreground/50">
+          <p className="text-base leading-7 text-foreground/70">
             Od 2016. godine bavimo se uzgojem mlečnih krava i tovnih bikova, gradeći pouzdano partnerstvo sa mlečnom industrijom. Naša farma kombinuje dugogodišnje iskustvo i posvećenost kvalitetu u svakoj fazi rada — od brige o stoci do isporuke krajnjem partneru.
           </p>
-          <p className="mt-4 text-base leading-7 text-foreground/50">
+          <p className="mt-4 text-base leading-7 text-foreground/70">
           Verujemo da poverenje gradi se vremenom i doslednošću. Zato svaku isporuku tretiramo sa istom pažnjom, bez obzira na količinu ili partnera — to je načelo koje nas vodi od prvog dana.
            </p>
         </div>
@@ -67,7 +67,7 @@ export default function AboutSectionScroll() {
         <div className="grid grid-cols-2 gap-12 sm:grid-cols-4 mb-16 border-y border-border py-10">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
-              <p className="text-[36px] font-heading font-bold text-primary">{s.value}</p>
+              <p className="text-[30px] sm:text-[40px] font-heading font-bold text-primary">{s.value}</p>
               <p className="mt-1 text-sm text-primary">{s.label}</p>
             </div>
           ))}

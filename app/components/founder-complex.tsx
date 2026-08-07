@@ -1,8 +1,8 @@
 export default function FounderSectionComplex() {
 
   return (
-    <section className="bg-muted py-16 sm:py-24" id="founder">
-      <div className="mx-auto max-w-7xl md:px-6 px-4 lg:px-8 grid gap-12 lg:grid-cols-2 items-center">
+    <section className="bg-muted pt-16 pb-10 sm:py-24" id="founder">
+      <div className="mx-auto max-w-7xl md:px-6 px-4 lg:px-8 grid gap-10 lg:grid-cols-2 items-center">
         <div>
           <img
             src="/Agromajestic-Images/Majetic-Founder.jpeg"
@@ -15,13 +15,13 @@ export default function FounderSectionComplex() {
           <h2 className="text-foreground/50 font-medium leading-7">
               Iza svake isporuke
           </h2>
-          <p className="mt-2 text-[40px] font-heading font-extrabold  mb-6 text-foreground">
+          <p className="text-[35px] sm:text-[40px] font-heading font-extrabold  sm:mb-10 mb-8 text-foreground">
              Osnivač
           </p>
-          <p className="text-base leading-7 text-foreground/70 mb-4">
+          <p className="text-base leading-7 text-foreground/70 sm:mb-6 mb-8 ">
             Mesut Majetić je 2016. godine osnovao Agro-Majetić sa ciljem da izgradi farmu na temeljima kvaliteta i poverenja. Ono što je počelo kao mali broj grla, vremenom je preraslo u stabilnu farmu koja opslužuje brojne partnere u mlečnoj industriji.
           </p>
-          <p className="text-base leading-7 text-foreground/70 mb-6">
+          <p className="text-base leading-7 text-foreground/70 sm:mb-6 mb-8">
             Svakodnevni rad na farmi — briga o stoci, planiranje isporuka, saradnja sa partnerima — vodi lično, uz uverenje da poslovni uspeh počiva na direktnom odnosu i pouzdanosti, a ne samo na brojkama.
           </p>
           <p className="font-heading font-extrabold italic text-primary text-lg border-l-2 border-primary pl-4">
