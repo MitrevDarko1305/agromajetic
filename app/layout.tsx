@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://agromajetic.rs/Agromajestic-Images/Open-Graph.png",
+        url: "https://res.cloudinary.com/dwybdunca/image/upload/v1786077141/Open-Graph_ykvcj7.png",
         width: 1200,
         height: 630,
         alt: "Agro Majetić — farma",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Agro Majetić — Pouzdan partner u mlečnoj industriji",
     description: "Uzgoj mlečnih krava i tovnih bikova od 2016. godine.",
-    images: ["https://agromajetic.rs/Agromajestic-Images/Open-Graph.png"],
+    images: ["https://res.cloudinary.com/dwybdunca/image/upload/v1786077141/Open-Graph_ykvcj7.png"],
   },
 
   icons: {
