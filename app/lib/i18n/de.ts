@@ -51,13 +51,14 @@ export const de = {
     video_description1: "Jeden Tag kümmern wir uns um das Vieh, pflegen den Betrieb und achten auf die Qualität — derselbe Standard, unabhängig von Jahreszeit oder Arbeitsaufwand. Jede Phase der Arbeit, von der Fütterung bis zur Tierpflege, wird sorgfältig überwacht, damit das Ergebnis stets zuverlässig und beständig bleibt.",
 
     kicker1: "Sehen Sie unseren Hof",
-    founder_title1: "Der Hof in",
+    video_title1: "Der Hof in",
     hightlight1: "Bewegung",
     video_description2: "Ein kurzer Einblick in unsere tägliche Arbeit — von der Tierpflege bis zur Vorbereitung der Lieferung. Jede Lieferung durchläuft denselben Prozess der Sorgfalt und Kontrolle, unabhängig von Saison oder Menge, damit wir unseren Partnern eine zuverlässige Qualität bieten können, auf die sie sich verlassen können.",
    },
    faq: {
    kicker: "Fragen und Antworten",
-   faq_title: "Häufig gestellte Fragen",
+   faq_title1: "Häufig gestellte",
+   faq_title2: "Fragen",
 
    question1: "Welche Regionen beliefern Sie?",
    question2: "Gibt es eine Mindestmenge für eine Zusammenarbeit?",
