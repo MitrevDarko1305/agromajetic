@@ -7,14 +7,14 @@ export default function AboutSectionScroll() {
 
   const { t } = useLanguage();
   const stats = [
-    { value: "2016", label: "Godina osnivanja" },
-    { value: "80+", label: "Grla stoke" },
-    { value: "4", label: "Parntera u industriji" },
-    { value: "10+", label: "Godina iskustva" },
-    {value: "98%", label: "Isporuca na vreme"},
-    {value: "4", label: "Zaposlenih"},
-    {value: "9.000m²", label: "Zemljišta"},
-    {value: "30+", label: "Тоvnih bikova"},
+    { value: "2016", label: t.about.year },
+    { value: "80+", label: t.about.bulls },
+    { value: "4", label: t.about.partners },
+    { value: "10+", label: t.about.experience },
+    {value: "98%", label: t.about.delivery},
+    {value: "4", label: t.about.employees},
+    {value: "9.000m²", label: t.about.land},
+    {value: "30+", label: t.about.bullsSold},
   ];
 
   const images = [
