@@ -40,7 +40,7 @@ export function HeroFullBackground({
 
     const base =
       " p-[12px] cursor-pointer capitalize transition-colors text-sm font-medium";
-    const primary = "bg-primary hover:bg-foreground font-extrabold text-white";
+    const primary = "bg-primary hover:bg-foreground hover:text-border font-extrabold text-white";
     const secondary = "text-white/60 hover:text-white";
 
     const className = `${base} ${btn.variant === "secondary" ? secondary : primary}`;

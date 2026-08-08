@@ -28,7 +28,7 @@ export default function VideoSection() {
   };
 
   return (
-    <section className="bg-muted pt-4 pb-16 sm:py-24 space-y-16">
+    <section className="bg-border pt-4 pb-16 sm:py-24 space-y-16">
       <div className="mx-auto max-w-7xl md:px-6 px-4 lg:px-8">
         {/* Image grid left, text right */}
         <div className="grid gap-10 lg:grid-cols-2 items-center">

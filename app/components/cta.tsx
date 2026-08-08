@@ -74,7 +74,7 @@ export default function CTASection() {
               <button
                 type="submit"
                 disabled={status === "loading"}
-                className="w-full  bg-white px-6 py-3 sm:mt-0 mt-8 text-sm font-extrabold cursor-pointer text-primary hover:bg-foreground hover:text-white transition-colors duration-200 disabled:opacity-50"
+                className="w-full  bg-border px-6 py-3 sm:mt-0 mt-8 text-sm font-extrabold cursor-pointer text-foreground hover:bg-foreground hover:text-border transition-colors duration-200 disabled:opacity-50"
               >
                 {status === "loading" ? "Slanje..." : "Pošaljite poruku"}
               </button>

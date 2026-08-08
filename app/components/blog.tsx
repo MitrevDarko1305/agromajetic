@@ -21,7 +21,7 @@ export default function BlogPreviewSection() {
   ];
 
   return (
-    <section className="bg-muted py-16 sm:py-24" id="blog">
+    <section className="bg-border py-16 sm:py-24" id="blog">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="sm:mb-12 mb-12">
           <h2 className="text-foreground/50 font-medium leading-7">Iz naše farme</h2>

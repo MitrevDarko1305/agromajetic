@@ -22,7 +22,7 @@ export default function ThemeToggle() {
     <button
       onClick={toggleTheme}
       aria-label="Toggle dark mode"
-      className="relative inline-flex h-9 w-9 items-center justify-center rounded-full border border-border hover:bg-muted transition-colors"
+      className="relative inline-flex h-9 w-9 items-center justify-center rounded-full hover:bg-background cursor-pointer transition-colors"
     >
       {isDark ? (
         <Sun size={18} className="text-primary" />

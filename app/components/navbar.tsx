@@ -42,7 +42,7 @@ export default function Navbar() {
        <Link
         href="/#hero"
         className={[
-        "text-[25px] text-primary dark font-extrabold hover:text-foreground tracking-tight transition-colors duration-300 font-heading",
+        "text-[25px] text-primary font-extrabold hover:text-foreground tracking-tight transition-colors duration-300 font-heading",
         ].join(" ")}
       >
        Agro Majetic{" "}
@@ -50,6 +50,7 @@ export default function Navbar() {
        </Link>
 
         {/* Desktop nav */}
+      <div className="flex items-center gap-0">
         <ul className="hidden bg-[#F2b2b2b]/80 backdrop-blur lg:flex items-center gap-[45px]">
           {links.map((l) => (
             <li key={l.href} className={navLink}>
@@ -59,11 +60,10 @@ export default function Navbar() {
           <li>
             <Link
               href="/#footer"
-              className="inline-flex font-bold items-center justify-center px-4 py-2 bg-primary  text-sm tracking-wide text-white hover:bg-foreground transition-colors duration-200"
+              className="inline-flex font-bold items-center justify-center px-4 py-2 bg-primary text-primary   text-sm tracking-wide text-white hover:bg-background transition-colors duration-200"
             >
               Contact
             </Link>
-            <ThemeToggle/>
           </li>
         </ul>
 
@@ -98,6 +98,8 @@ export default function Navbar() {
             />
           </div>
         </button>
+        <ThemeToggle/>
+        </div>
       </div>
 
       {/* Mobile menu panel */}
@@ -126,6 +128,8 @@ export default function Navbar() {
       >
         Contact
       </Link>
+      <div className="mt-4">
+      </div>
     </nav>
   </div>
 </div>
