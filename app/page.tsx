@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import Navbar from "./components/navbar";
 import { HeroFullBackground } from "./components/hero";
@@ -9,13 +11,11 @@ import BlogPreviewSection from "./components/blog";
 import CTASection from "./components/cta";
 import Footer from "./components/footer";
 import { ScrollToTopButton } from "./components/floating-button";
+import { useLanguage } from "./components/language-provider";
 
-
-
-
-
-export default async function Page()
+export default function Page()
   {
+    const { t } = useLanguage ();
   return (
     <>
       <main className="p-0 text-gray-600">
@@ -23,13 +23,13 @@ export default async function Page()
          <HeroFullBackground
         backgroundImage="Agromajestic-Images/Majestic-Hero.jpeg"
         backgroundImageMobile="/Agromajestic-Images/Majestic-Hero.jpeg"
-        kicker="Vaš partner u mlecnoj industriji"
-        titleBefore="Stoka i Mleko —"
-        highlight="Pouzdano"
-        titleAfter="Isporučeno"
-        description=" Od farme do fabrike — stabilna snabdevačka mreža za mlečnu industriju."
-        primaryButton={{ label: "Zatražite ponudu", href: "/book" }}
-        secondaryButton={{ label: "Saznajte više", href: "/how-it-works" }}/>
+        kicker={t.hero.kicker}
+        titleBefore={t.hero.titleBefore}
+        highlight={t.hero.highlight}
+        titleAfter={t.hero.titleAfter}
+        description={t.hero.description}
+        primaryButton={{ label: t.hero.primaryButton, href: "/book" }}
+        secondaryButton={{ label: t.hero.secondaryButton, href: "/how-it-works" }}/>
         <AboutSectionScroll />
         <FounderSectionComplex />
         <VideoSection />

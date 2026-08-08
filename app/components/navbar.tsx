@@ -4,11 +4,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import ThemeToggle from "./theme-toggle";
+import LanguageToggle from "./language-toggle";
+import { useLanguage } from "./language-provider";
 
 export default function Navbar() {
   
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
+  const { t } = useLanguage ();
 
   // close mobile menu on route change
   useEffect(() => {
@@ -27,12 +30,12 @@ export default function Navbar() {
     "cursor-pointer relative text-sm tracking-wide text-primary hover:text-primary-hover"
 
   const links = [
-    { href: "/", label: "Početna" },
-    { href: "/#about", label: "O nama" },
-    { href: "/#founder", label: "Osnivač" },
-    { href: "/#faq", label: "Često postavljana pitanja"},
-    { href: "/#cta", label: "Zakazivanje" },
-    { href: "/#blog", label: "Blog" },
+    { href: "/", label: t.nav.home },
+    { href: "/#about", label: t.nav.about },
+    { href: "/#founder", label: t.nav.founder },
+    { href: "/#faq", label: t.nav.faq},
+    { href: "/#cta", label: t.nav.booking},
+    { href: "/#blog", label: t.nav.blog },
   ];
 
   return (
@@ -99,6 +102,7 @@ export default function Navbar() {
           </div>
         </button>
         <ThemeToggle/>
+        <LanguageToggle/>
         </div>
       </div>
 

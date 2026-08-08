@@ -1,7 +1,11 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import { useLanguage } from "./language-provider";
+
 
 export default function AboutSectionScroll() {
+
+  const { t } = useLanguage();
   const stats = [
     { value: "2016", label: "Godina osnivanja" },
     { value: "80+", label: "Grla stoke" },
@@ -52,15 +56,15 @@ export default function AboutSectionScroll() {
     <section className="bg-surface py-16 sm:py-24" id="about">
       <div className="mx-auto max-w-7xl md:px-6 px-4 lg:px-8">
         <div className="mx-auto max-w-5xl  text-left mb-12">
-          <h2 className="text-foreground/50 font-medium leading-7">Naša priča</h2>
+          <h2 className="text-foreground/50 font-medium leading-7">{t.about.kicker}</h2>
           <p className="mt-2 text-[35px] sm:text-[40px] font-heading font-extrabold font-leading mb-4 text-foreground">
-            О <span className="text-primary font-extrabold font-leading">Agro-Majetić</span>
+            {t.about.titleBefore} <span className="text-primary font-extrabold font-leading">{t.about.highlight}</span>
           </p>
           <p className="text-base leading-7 text-foreground/70">
-            Od 2016. godine bavimo se uzgojem mlečnih krava i tovnih bikova, gradeći pouzdano partnerstvo sa mlečnom industrijom. Naša farma kombinuje dugogodišnje iskustvo i posvećenost kvalitetu u svakoj fazi rada — od brige o stoci do isporuke krajnjem partneru.
+            {t.about.about_paragraph1}
           </p>
           <p className="mt-4 text-base leading-7 text-foreground/70">
-          Verujemo da poverenje gradi se vremenom i doslednošću. Zato svaku isporuku tretiramo sa istom pažnjom, bez obzira na količinu ili partnera — to je načelo koje nas vodi od prvog dana.
+            {t.about.about_paragraph2}
            </p>
         </div>
 
