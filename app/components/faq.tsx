@@ -1,46 +1,21 @@
 "use client";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { useLanguage } from "./language-provider";
 
 export default function FAQSection() {
+  const { t } = useLanguage();
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const faqs = [
-    {
-      question: "Koje regione pokrivate isporukom?",
-      answer:
-        "Isporučujemo mleko i stoku partnerima širom regiona, uz mogućnost dogovora za veće udaljenosti u zavisnosti od količine i učestalosti isporuke.",
-    },
-    {
-      question: "Da li postoji minimalna količina za saradnju?",
-      answer:
-        "Minimalna količina zavisi od vrste saradnje — kontaktirajte nas i zajedno ćemo definisati uslove koji odgovaraju vašim potrebama.",
-    },
-    {
-      question: "Kako izgleda proces uspostavljanja partnerstva?",
-      answer:
-        "Nakon prvog kontakta, dogovaramo posetu farmi ili razmenu uzoraka, a zatim definišemo uslove isporuke i saradnje pre potpisivanja dogovora.",
-    },
-    {
-      question: "Da li imate stalne zalihe tokom cele godine?",
-      answer:
-        "Da, farma radi kontinuirano tokom cele godine, uz isti standard kvaliteta bez obzira na sezonu.",
-    },
-    {
-      question: "Kakvi su uslovi kvaliteta i nege životinja na farmi?",
-      answer:
-        "Svakodnevno pratimo zdravlje i ishranu stoke, uz redovne kontrole kako bismo obezbedili dosledan kvalitet mleka i stoke.",
-    },
-    {
-      question: "Da li je moguća dugoročna saradnja?",
-      answer:
-        "Apsolutno — većina naših partnerstava je izgrađena na dugoročnoj osnovi, uz poverenje i doslednu isporuku.",
-    },
-    {
-      question: "Kako mogu da zatražim ponudu?",
-      answer:
-        "Dovoljno je da nas kontaktirate putem forme ili telefona — odgovaramo brzo i dogovaramo sledeće korake direktno sa vama.",
-    },
+    
+    {question: t.faq.question1, answer:t.faq.answer1},
+    {question: t.faq.question2, answer:t.faq.answer2},
+    {question: t.faq.question3, answer:t.faq.answer3},
+    {question: t.faq.question4, answer:t.faq.answer4},
+    {question: t.faq.question5, answer:t.faq.answer5},
+    {question: t.faq.question6, answer:t.faq.answer6},
+    {question: t.faq.question7, answer:t.faq.answer7},
   ];
 
   const toggle = (i: number) => {
@@ -52,7 +27,7 @@ export default function FAQSection() {
       <div className="mx-auto max-w-3xl px-4 md:px-6 lg:px-8">
         <div className="text-center mb-10 sm:mb-20">
           <h2 className="text-foreground/50 font-medium leading-7">
-            Pitanja i odgovori
+            {t.faq.kicker}
           </h2>
           <p className="sm:mt-2 mt-0 sm:text-[40px] text-[35px] leading-[1.4] font-heading font-extrabold text-foreground">
             Često postavljana <span className="text-foreground">pitanja</span>

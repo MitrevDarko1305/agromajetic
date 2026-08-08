@@ -44,4 +44,54 @@ export const sr = {
         founder_description2: "Svakodnevni rad na farmi — briga o stoci, planiranje isporuka, saradnja sa partnerima — vodi lično, uz uverenje da poslovni uspeh počiva na direktnom odnosu i pouzdanosti, a ne samo na brojkama.",
         quote: "Svaka isporuka nosi naš potpis — i naše ime stoji iza nje„",
     },
+
+        video: {
+        kicker: "Svakodnevni rad",
+        video_title: " Život na",
+        highlight: "farmi",
+        video_description1: " Svakoga dana brinemo o stoci, održavamo prostor i pratimo kvalitet — isti standard, bez obzira na godišnje doba ili količinu posla. Svaka faza rada, od ishrane do nege životinja, prati se pažljivo kako bi rezultat uvek bio dosledan i pouzdan.",
+
+        kicker1: "Pogledajte našu farmu",
+        video_title1: "Farma u",
+        hightlight1: "pokretu",
+        video_description2: " Kratak uvid u naš svakodnevni rad — od brige o stoci do pripreme za isporuku. Svaka isporuka prolazi kroz isti proces pažnje i kontrole, bez obzira na sezonu ili količinu, kako bismo našim partnerima omogućili dosledan kvalitet na koji mogu da računaju",
+       },
+
+       faq: {
+        kicker: "Pitanja i odgovori",
+        faq_title1: "Često postavljana",
+        faq_title2: "pitanja",
+
+        /* Questions / Answers */
+        question1: "Koji regioni pokrivate isporukom?",
+        question2: "Da li postoji minimalna količina za saradnju?",
+        question3: "Kako izgleda process uspostavljanja partnerstva?",
+        question4: "Dali imate stalne zalihe tokom cele godine?",
+        question5: "Kakvi su uslovi kvaliteta i nege životinja na farmi?",
+        question6: "Da li je moguća dugoročna saradnja?",
+        question7: "Kako mogu da zatražim ponudu?",
+
+        answer1: "Isporučujemo mleko i stoku partnerima širom regiona, uz mogućnost dogovora za veće udaljenosti u zavisnosti od količine i učestalosti isporuke.",
+        answer2: "Minimalna količina zavisi od vrste saradnje — kontaktirajte nas i zajedno ćemo definisati uslove koji odgovaraju vašim potrebama.",
+        answer3: "Nakon prvog kontakta, dogovaramo posetu farmi ili razmenu uzoraka, a zatim definišemo uslove isporuke i saradnje pre potpisivanja dogovora.",
+        answer4: "Da, farma radi kontinuirano, tokom cele godine, uz isti standard kvaliteta bez obzira na sezonu.",
+        answer5: "Svakodnevno pratimo zdravlje i ishranu stoke, uz redovne kontrole kako bismo obezbedili dosledan kvalitet mleka i stoke.",
+        answer6: "Absolutno - većina naših partnerstava je izgrađena na dugoročnoj osnovi, uz poverenje i doslednu isporuku.",
+        answer7: "Dovoljno je da nas kontaktirate putem forme ili telefona - odgovaramo brzo i dogovaramo sledeće korake direktno sa vama.",
+       },
+
+       cta: {
+        kicker: "Spremni za pouzdano partnerstvo?",
+        cta_title: "Kontaktirajte nas i zajedno ćemo dogovoriti uslove saradnje koji odgovaraju  vašim potrebama.",
+
+        /* contact form */
+        name_placeholder: "Ime i prezime",
+        email_placeholder: "Email adresa",
+        message_placeholder: "Vaša poruka",
+        send_button: "Pošaljite poruku",
+        success_title: "Poruka poslata! 🎉",
+        success_desc: "Javićemo vam se uskoro.",
+        error_message: "Došlo je do greške. Pokušajte ponovo.",
+       }
+
         }

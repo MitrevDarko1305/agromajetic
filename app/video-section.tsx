@@ -1,6 +1,7 @@
 "use client";
 import { useState, useRef } from "react";
 import { Play } from "lucide-react";
+import { useLanguage } from "./components/language-provider";
 
 export default function VideoSection() {
   const [playing, setPlaying] = useState(false);
@@ -27,6 +28,8 @@ export default function VideoSection() {
     videoRef.current?.play();
   };
 
+  const { t } = useLanguage();
+
   return (
     <section className="bg-border pt-4 pb-16 sm:py-24 space-y-16">
       <div className="mx-auto max-w-7xl md:px-6 px-4 lg:px-8">
@@ -45,29 +48,28 @@ export default function VideoSection() {
 
           <div>
             <h2 className="text-foreground/50 font-medium leading-7">
-              Svakodnevni rad 
+              {t.video.kicker}
             </h2>
             <p className="sm:mt-2 mt-0 text-[35px] sm:text-[40px] font-heading font-heading font-extrabold mb-4 text-foreground">
-              Život na <span className="text-primary">farmi</span>
+              {t.video.video_title} <span className="text-primary">{t.video.highlight}</span>
             </p>
             <p className="text-base leading-7 text-foreground/70">
-             Svakoga dana brinemo o stoci, održavamo prostor i pratimo kvalitet — isti standard, bez obzira na godišnje doba ili količinu posla. Svaka faza rada, od ishrane do nege životinja, prati se pažljivo kako bi rezultat uvek bio dosledan i pouzdan.
+               {t.video.video_description1}
             </p>
           </div>
         </div>
 
         {/* Video left, text right */}
-<div className="grid gap-10 lg:grid-cols-2 items-center sm:mt-20 mt-16">
-
+       <div className="grid gap-10 lg:grid-cols-2 items-center sm:mt-20 mt-16">
   <div>
     <h2 className="text-foreground/50 font-medium leading-7">
-      Pogledajte našu farmu
+      {t.video.kicker1}
     </h2>
     <p className="sm:mt-2 mt-0 sm:text-[40px] text-[35px] font-heading font-extrabold mb-4 text-foreground">
-      Farma u <span className="text-primary">pokretu</span>
+      {t.video.video_title1}<span className="text-primary">{t.video.hightlight1}</span>
     </p>
     <p className="text-base leading-7 text-foreground/70 mb-8">
-     Kratak uvid u naš svakodnevni rad — od brige o stoci do pripreme za isporuku. Svaka isporuka prolazi kroz isti proces pažnje i kontrole, bez obzira na sezonu ili količinu, kako bismo našim partnerima omogućili dosledan kvalitet na koji mogu da računaju.
+     {t.video.video_description2}
     </p>
 
     <div className="flex items-center gap-8">

@@ -1,7 +1,9 @@
 "use client";
 import { useState } from "react";
+import { useLanguage } from "./language-provider";
 
 export default function CTASection() {
+  const { t } = useLanguage();
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -34,11 +36,10 @@ export default function CTASection() {
       <div className="mx-auto max-w-5xl sm:px-6 px-4 lg:px-8 grid gap-12 sm:grid-cols-2 items-center">
         <div>
           <p className="text-[35px] sm:text-[40px] leading-[1.2] font-heading font-extrabold text-white sm:mb-4 mb-10">
-            Spremni za pouzdano partnerstvo?
+            {t.cta.kicker}
           </p>
           <p className="text-base leading-7 text-white/85 max-w-md">
-            Kontaktirajte nas i zajedno ćemo dogovoriti uslove saradnje koji
-            odgovaraju vašim potrebama.
+            {t.cta.cta_title}
           </p>
         </div>
 
@@ -54,21 +55,21 @@ export default function CTASection() {
                 type="text"
                 name="name"
                 required
-                placeholder="Ime i prezime"
+                placeholder={t.cta.name_placeholder}
                 className="w-full  border border-white/20 bg-white/10 px-4 py-3 text-sm text-white placeholder-white/50 outline-none focus:border-white/50"
               />
               <input
                 type="email"
                 name="email"
                 required
-                placeholder="Email adresa"
+                placeholder={t.cta.email_placeholder}
                 className="w-full  border border-white/20 bg-white/10 px-4 py-3 text-sm text-white placeholder-white/50 outline-none focus:border-white/50"
               />
               <textarea
                 name="message"
                 required
                 rows={4}
-                placeholder="Vaša poruka"
+                placeholder={t.cta.message_placeholder}
                 className="w-full  border border-white/20 bg-white/10 px-4 py-3 text-sm text-white placeholder-white/50 outline-none focus:border-white/50"
               />
               <button
@@ -76,11 +77,11 @@ export default function CTASection() {
                 disabled={status === "loading"}
                 className="w-full  bg-border px-6 py-3 sm:mt-0 mt-8 text-sm font-extrabold cursor-pointer text-foreground hover:bg-foreground hover:text-border transition-colors duration-200 disabled:opacity-50"
               >
-                {status === "loading" ? "Slanje..." : "Pošaljite poruku"}
+                {status === "loading" ? "Slanje..." : t.cta.send_button}
               </button>
 
               {status === "error" && (
-                <p className="text-white/90 text-xs">Došlo je do greške. Pokušajte ponovo.</p>
+                <p className="text-white/90 text-xs">{t.cta.error_message}</p>
               )}
             </form>
           )}

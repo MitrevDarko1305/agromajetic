@@ -28,7 +28,7 @@ export default function FounderSectionComplex() {
           <p className="text-base leading-7 text-foreground/70 sm:mb-6 mb-8">
              {t.founder.founder_description2}
           </p>
-          <p className="font-heading font-extrabold italic text-primary text-lg border-l-2 border-primary pl-4">
+          <p className="font-heading font-extrabold italic text-foreground text-lg border-l-2 border-primary pl-4">
              {t.founder.quote}
           </p>
         </div>
