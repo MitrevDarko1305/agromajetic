@@ -21,15 +21,19 @@ export default function Page()
       <main className="p-0 text-gray-600">
         <Navbar/>
          <HeroFullBackground
-        backgroundImage="Agromajestic-Images/Majestic-Hero.jpeg"
-        backgroundImageMobile="/Agromajestic-Images/Majestic-Hero.jpeg"
-        kicker={t.hero.kicker}
-        titleBefore={t.hero.titleBefore}
-        highlight={t.hero.highlight}
-        titleAfter={t.hero.titleAfter}
-        description={t.hero.description}
-        primaryButton={{ label: t.hero.primaryButton, href: "/book" }}
-        secondaryButton={{ label: t.hero.secondaryButton, href: "/how-it-works" }}/>
+         backgroundImages={[
+         "/Agromajestic-Images/Majestic-Hero.jpeg",
+         "/Agromajestic-Images/Majetic-12.jpeg",
+         "/Agromajestic-Images/Majetic-10.jpeg",
+         ]}
+         kicker={t.hero.kicker}
+         titleBefore={t.hero.titleBefore}
+         highlight={t.hero.highlight}
+         titleAfter={t.hero.titleAfter}
+         description={t.hero.description}
+         primaryButton={{ label: t.hero.primaryButton, href: "/book" }}
+         secondaryButton={{ label: t.hero.secondaryButton, href: "/how-it-works" }}
+       />
         <AboutSectionScroll />
         <FounderSectionComplex />
         <VideoSection />
@@ -42,3 +46,16 @@ export default function Page()
     </>
   );
 }
+
+/*
+  <HeroFullBackground
+        backgroundImage="Agromajestic-Images/Majestic-Hero.jpeg"
+        backgroundImageMobile="/Agromajestic-Images/Majestic-Hero.jpeg"
+        kicker={t.hero.kicker}
+        titleBefore={t.hero.titleBefore}
+        highlight={t.hero.highlight}
+        titleAfter={t.hero.titleAfter}
+        description={t.hero.description}
+        primaryButton={{ label: t.hero.primaryButton, href: "/book" }}
+        secondaryButton={{ label: t.hero.secondaryButton, href: "/how-it-works" }}/>
+        */

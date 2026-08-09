@@ -1,4 +1,50 @@
+// language-provider.tsx
 "use client";
+import { createContext, useContext, useState, useEffect } from "react";
+import { sr } from "../lib/i18n/sr";
+import { de } from "../lib/i18n/de";
+
+const dictionaries = { sr, de };
+type Lang = "sr" | "de";
+
+const LanguageContext = createContext<{
+  lang: Lang;
+  t: typeof sr;
+  setLang: (l: Lang) => void;
+  isTransitioning: boolean;
+}>({ lang: "sr", t: sr, setLang: () => {}, isTransitioning: false });
+
+export function LanguageProvider({ children }: { children: React.ReactNode }) {
+  const [lang, setLangState] = useState<Lang>("sr");
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  useEffect(() => {
+    const stored = localStorage.getItem("lang") as Lang | null;
+    if (stored) setLangState(stored);
+  }, []);
+
+  const setLang = (l: Lang) => {
+    setIsTransitioning(true); // overlay covers screen first
+    setTimeout(() => {
+      setLangState(l);
+      localStorage.setItem("lang", l);
+      setTimeout(() => setIsTransitioning(false), 50); // reveal after content updated
+    }, 200);
+  };
+
+  return (
+    <LanguageContext.Provider value={{ lang, t: dictionaries[lang], setLang, isTransitioning }}>
+      {children}
+    </LanguageContext.Provider>
+  );
+}
+
+export const useLanguage = () => useContext(LanguageContext);
+
+
+
+
+/*
 import { createContext, useContext, useState, useEffect } from "react";
 import { sr } from "../lib/i18n/sr";
 import { de } from "../lib/i18n/de";
@@ -33,3 +79,4 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 }
 
 export const useLanguage = () => useContext(LanguageContext);
+*/

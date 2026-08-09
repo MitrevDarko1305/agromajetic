@@ -1,20 +1,23 @@
+import { useLanguage } from "./language-provider";
+
 export default function BlogPreviewSection() {
+  const { t } = useLanguage();
   const posts = [
     {
-      title: "Kako izgleda naš svakodnevni rad na farmi",
-      excerpt: "Kratak uvid u naš svakodnevni rad na farmi — od brige o stoci i pravilne ishrane, do pripreme svake isporuke sa istom pažnjom, bez obzira na sezonu.",
+      title: t.blog.blog1_title,
+      excerpt: t.blog.blog1_description,
       image: "/Agromajestic-Images/Majetic-12.jpeg",
       href: "/blog/svakodnevni-rad",
     },
     {
-      title: "Put od farme do partnera",
-      excerpt: "Koraci koji stoje iza svake pouzdane isporuke — od prvog kontakta do dugoročnog partnerstva izgrađenog na doslednosti.",
+      title: t.blog.blog2_title,
+      excerpt: t.blog.blog2_description,
       image: "/Agromajestic-Images/golmix-logo.png",
       href: "/blog/od-farme-do-partnera",
     },
     {
-      title: "Zašto je dosledan kvalitet ključan u mlečnoj industriji",
-      excerpt: "Šta partneri očekuju od pouzdanog dobavljača i kako taj kvalitet obezbeđujemo iz sezone u sezonu, bez kompromisa.",
+      title: t.blog.blog3_title,
+      excerpt: t.blog.blog3_description,
       image: "/Agromajestic-Images/Majetic-3.jpeg",
       href: "/blog/doslednost-kvaliteta",
     },
@@ -24,13 +27,12 @@ export default function BlogPreviewSection() {
     <section className="bg-border py-16 sm:py-24" id="blog">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="sm:mb-12 mb-12">
-          <h2 className="text-foreground/50 font-medium leading-7">Iz naše farme</h2>
+          <h2 className="text-foreground/50 font-medium leading-7">{t.blog.kicker}</h2>
           <p className="sm:mt-2 mt-0 text-[32px] font-heading font-extrabold text-foreground">
-            Blog
+            {t.blog.blog_title}
           </p>
           <p className="sm:mt-4 mt-6 text-base leading-relaxed text-foreground/70 max-w-xl">
-            Kratki uvidi iz našeg svakodnevnog rada — o stoci, procesu i onome što
-            stoji iza svake isporuke.
+            {t.blog.blog_description}
           </p>
         </div>
 

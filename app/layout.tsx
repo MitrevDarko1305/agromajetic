@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Fraunces, Work_Sans } from "next/font/google";
 import "./globals.css";
-import SmoothScroll from "./components/lenis-scroll";
 import { LanguageProvider } from "./components/language-provider";
+
 
 const workSans = Work_Sans({
   variable: "--font-work-sans",

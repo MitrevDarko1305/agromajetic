@@ -92,6 +92,27 @@ export const sr = {
         success_title: "Poruka poslata! 🎉",
         success_desc: "Javićemo vam se uskoro.",
         error_message: "Došlo je do greške. Pokušajte ponovo.",
+       },
+
+       blog: {
+        kicker: "Iz naše farme",
+        blog_title:"Blog",
+        blog_description: "Kratki uvidi iz našeg svakodnevnog rada — o stoci, procesu i onome što stoji iza svake isporuke.",
+
+        blog1_title: "Kako izgleda naš svakodnevni rad na farmi",
+        blog1_description: "Kratak uvid u naš svakodnevni rad na farmi — od brige o stoci i pravilne ishrane, do pripreme svake isporuke sa istom pažnjom, bez obzira na sezonu.",
+
+        blog2_title: "Put od farme do partnera",
+        blog2_description: "Koraci koji stoje iza svake pouzdane isporuke — od prvog kontakta do dugoročnog partnerstva izgrađenog na doslednosti.",
+
+        blog3_title: "Zašto je dosledan kvalitet ključan u mlečnoj industriji",
+        blog3_description: "Šta partneri očekuju od pouzdanog dobavljača i kako taj kvalitet obezbeđujemo iz sezone u sezonu, bez kompromisa.",
+       },
+
+       footer: {
+        footer_logo:"Agro-Majetić",
+        footer_description: "Stoka i mleko, pouzdano isporučeno — od 2016. godine.",
+        footer_rights: "© 2026 Agro Majetić. Sva prava zadržana.",
        }
 
         }

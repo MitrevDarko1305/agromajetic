@@ -30,7 +30,7 @@ export default function FAQSection() {
             {t.faq.kicker}
           </h2>
           <p className="sm:mt-2 mt-0 sm:text-[40px] text-[35px] leading-[1.4] font-heading font-extrabold text-foreground">
-            Često postavljana <span className="text-foreground">pitanja</span>
+            {t.faq.faq_title1} <span className="text-foreground">{t.faq.faq_title2}</span>
           </p>
         </div>
 

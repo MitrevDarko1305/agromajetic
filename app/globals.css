@@ -60,6 +60,15 @@ body {
   font-family: var(--font-work-sans), sans-serif;
 }
 
+@keyframes kenburns {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.12); }
+}
+
+.animate-kenburns {
+  animation: kenburns 8s ease-out forwards;
+}
+
 html {
   scroll-behavior: smooth;
 }

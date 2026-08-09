@@ -89,5 +89,25 @@ export const de = {
     success_title: "Nachricht gesendet! 🎉",
     success_desc: "Wir melden uns bald bei Ihnen",
     error_message: "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
-       }
-  }
+       },
+
+   blog: {
+        kicker: "Von unserem Hof",
+        blog_title:"Blog",
+        blog_description: "Kurze einblicke in unsere tägliche arbeit - über das Vieh, den Prozess und das was hinter jeder Lieferung steht.",
+
+        blog1_title: "Unsere tägliche Arbeit auf dem Hof",
+        blog1_description: "Ein Einblick in unsere tägliche Arbeit — von der Tierpflege bis zur Vorbereitung jeder Lieferung.",
+
+        blog2_title: "Der Weg vom Hof zum Partner",
+        blog2_description: "Die Schritte hinter jeder zuverlässigen Lieferung — vom ersten Kontakt bis zur langfristigen Partnerschaft, die auf Beständigkeit aufgebaut ist.",
+
+        blog3_title: "Gleichbleibende Qualität",
+        blog3_description: "Was Partner von einem zuverlässigen Lieferanten erwarten und wie wir diese Qualität sicherstellen.",
+       },
+   footer: {
+       footer_logo: "Agro-Majetić",
+       footer_description: "Vieh und Milch, zuverlässig geliefert — seit 2016.",
+       footer_rights: "© 2026 Agro Majetić. Alle Rechte vorbehalten.",
+       },
+     }

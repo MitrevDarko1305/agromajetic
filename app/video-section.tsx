@@ -66,7 +66,7 @@ export default function VideoSection() {
       {t.video.kicker1}
     </h2>
     <p className="sm:mt-2 mt-0 sm:text-[40px] text-[35px] font-heading font-extrabold mb-4 text-foreground">
-      {t.video.video_title1}<span className="text-primary">{t.video.hightlight1}</span>
+      {t.video.video_title1} <span className="text-primary">{t.video.hightlight1}</span>
     </p>
     <p className="text-base leading-7 text-foreground/70 mb-8">
      {t.video.video_description2}

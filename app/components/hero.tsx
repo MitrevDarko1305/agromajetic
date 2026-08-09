@@ -1,4 +1,5 @@
 "use client";
+import { useState, useEffect } from "react";
 
 type HeroButton = {
   label: string;
@@ -8,9 +9,8 @@ type HeroButton = {
 };
 
 type HeroFullBackgroundProps = {
-  backgroundImage: string;
-  backgroundImageMobile?: string; // new: optional mobile-specific image
-  ResponsiveImageBehavior?: string;
+  backgroundImages: string[]; // now an array instead of single string
+  backgroundImageMobile?: string;
   kicker?: string;
   titleBefore: string;
   highlight?: string;
@@ -21,92 +21,76 @@ type HeroFullBackgroundProps = {
 };
 
 export function HeroFullBackground({
-  backgroundImage,
+  backgroundImages,
   backgroundImageMobile,
-  ResponsiveImageBehavior,
-  kicker = "trusted dental clinic",
+  kicker,
   titleBefore,
-  highlight = "Great Smiles",
+  highlight,
   titleAfter,
   description,
   primaryButton,
   secondaryButton,
 }: HeroFullBackgroundProps) {
-  const bgBehavior =
-    ResponsiveImageBehavior ?? "bg-cover bg-center bg-no-repeat md:bg-cover";
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % backgroundImages.length);
+    }, 6000); // change image every 6s
+    return () => clearInterval(interval);
+  }, [backgroundImages.length]);
 
   const renderButton = (btn?: HeroButton) => {
     if (!btn) return null;
-
-    const base =
-      " p-[12px] cursor-pointer capitalize transition-colors text-sm font-medium";
-    const primary = "bg-primary hover:bg-foreground hover:text-border font-extrabold text-white";
+    const base = "p-[12px] cursor-pointer capitalize transition-colors text-sm font-medium";
+    const primary = "bg-primary hover:bg-foreground font-extrabold text-white";
     const secondary = "text-white/60 hover:text-white";
-
     const className = `${base} ${btn.variant === "secondary" ? secondary : primary}`;
 
     if (btn.href) {
-      return (
-        <a href={btn.href} className={className}>
-          {btn.label}
-        </a>
-      );
+      return <a href={btn.href} className={className}>{btn.label}</a>;
     }
-
-    return (
-      <button onClick={btn.onClick} className={className}>
-        {btn.label}
-      </button>
-    );
+    return <button onClick={btn.onClick} className={className}>{btn.label}</button>;
   };
 
   return (
-    <section className="relative h-[50dvh] sm:h-screen" id="hero">
-      <div className={`relative h-full ${bgBehavior} flex items-center text-white pr-[5%] md:pr-[5%] md:pl-[5%] pl-[5%]`}>
-        {/* Mobile image */}
-        <img
-          src={backgroundImageMobile || backgroundImage}
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover md:hidden"
-        />
-        {/* Desktop image */}
-        <img
-          src={backgroundImage}
-          alt=""
-          className="absolute inset-0 hidden h-full w-full object-cover md:block"
-        />
+    <section className="relative h-[100dvh] md:h-screen">
+      <div className="relative h-full flex items-center text-white pr-[5%] pl-[5%]">
+        {/* Ken Burns rotating images */}
+        {backgroundImages.map((src, i) => (
+          <img
+            key={src}
+            src={src}
+            alt=""
+            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-[1500ms] ease-in-out ${
+              i === activeIndex ? "opacity-100 animate-kenburns" : "opacity-0"
+            }`}
+            style={{ zIndex: i === activeIndex ? 1 : 0 }}
+          />
+        ))}
 
         <div className="absolute inset-0 bg-black/40 z-10" />
 
-        <div className="flex z-20 flex-col mt-10">
-          {kicker && (
-            <div className="text-sm text-white/40 hidden md:block tracking-wide">{kicker}</div>
-          )}
+        <div className="flex z-20 flex-col mt-20">
+          {kicker && <div className="text-sm text-white/40 tracking-wide">{kicker}</div>}
 
-          <div className="md:text-[45px] text-[30px] font-extrabold mb-4 text-white leading-[1.3] md:leading-relaxed font-heading">
+          <div className="text-[45px] font-extrabold mb-4 text-white font-heading">
             {titleBefore}
             {highlight && <span className="text-primary"> {highlight} </span>}
             {titleAfter}
           </div>
 
           {description && (
-            <p className="w-full md:max-w-[397px] md:mb-[40px] mb-[30px] text-sm text-white ">
-              {description}
-            </p>
+            <p className="w-full md:max-w-[397px] mb-[40px] text-sm text-white">{description}</p>
           )}
 
           <div className="flex gap-[16px] font-extrabold">
-            {renderButton(
-              primaryButton ? { ...primaryButton, variant: "primary" } : undefined
-            )}
-            {renderButton(
-              secondaryButton ? { ...secondaryButton, variant: "secondary" } : undefined
-            )}
+            {renderButton(primaryButton ? { ...primaryButton, variant: "primary" } : undefined)}
+            {renderButton(secondaryButton ? { ...secondaryButton, variant: "secondary" } : undefined)}
           </div>
         </div>
       </div>
 
-      {/* KEEP THIS — Navbar relies on it */}
       <div id="hero-sentinel" className="absolute bottom-0 left-0 h-px w-full" />
     </section>
   );
