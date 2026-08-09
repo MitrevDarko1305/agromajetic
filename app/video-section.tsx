@@ -87,7 +87,7 @@ export default function VideoSection() {
    <div className="relative rounded-lg overflow-hidden aspect-video bg-black">
     <video
       ref={videoRef}
-      src="/Agromajestic-Images/farm-video-1.mp4"
+      src="/Agromajestic-Images/Agro-Majetic-video.mp4"
       controls={playing}
       playsInline
       className="h-full w-full object-cover"
