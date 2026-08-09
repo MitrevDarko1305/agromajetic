@@ -12,6 +12,8 @@ import CTASection from "./components/cta";
 import Footer from "./components/footer";
 import { ScrollToTopButton } from "./components/floating-button";
 import { useLanguage } from "./components/language-provider";
+import CTASectionComplex from "./components/cta-complex";
+import MilestoneSection from "./components/milestone";
 
 export default function Page()
   {
@@ -34,7 +36,8 @@ export default function Page()
         <FounderSectionComplex />
         <VideoSection />
         <FAQSection />
-        <CTASection />
+        <MilestoneSection />
+        <CTASectionComplex />
         <BlogPreviewSection />
         <Footer />
         <ScrollToTopButton/>

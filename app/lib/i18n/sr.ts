@@ -80,6 +80,16 @@ export const sr = {
         answer7: "Dovoljno je da nas kontaktirate putem forme ili telefona - odgovaramo brzo i dogovaramo sledeće korake direktno sa vama.",
        },
 
+       milestone: {
+        kicker: "Naš put",
+        milestone_title1: "Kroz",
+        milestone_title2: "godine",
+        milestone1: "Osnovana farma Agro-Majetić sa malim brojem grla.",
+        milestone2: "Proširenje stada i početak saradnje sa prvim partnerima u mlečnoj industriji.",
+        milestone3: "Modernizacija opreme i uvođenje novih standarda kvaliteta.",
+        milestone4: "Pouzdan partner brojnim kompanijama u mlečnoj industriji.",
+       },
+
        cta: {
         kicker: "Spremni za pouzdano partnerstvo?",
         cta_title: "Kontaktirajte nas i zajedno ćemo dogovoriti uslove saradnje koji odgovaraju  vašim potrebama.",
@@ -89,6 +99,7 @@ export const sr = {
         email_placeholder: "Email adresa",
         message_placeholder: "Vaša poruka",
         send_button: "Pošaljite poruku",
+        sending: "Slanje...",
         success_title: "Poruka poslata! 🎉",
         success_desc: "Javićemo vam se uskoro.",
         error_message: "Došlo je do greške. Pokušajte ponovo.",

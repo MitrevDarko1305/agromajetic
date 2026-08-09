@@ -77,6 +77,16 @@ export const de = {
    answer7: "Es genügt, uns über das Formular oder telefonisch zu kontaktieren — wir antworten schnell und besprechen die nächsten Schritte direkt mit Ihnen.",
   },
 
+  milestone: {
+  kicker: "Unser Weg",
+  milestone_title1: "Durch die",
+  milestone_title2: "Jahre",
+  milestone1: "Der Betrieb Agro-Majetić wurde mit einer kleinen Anzahl von Tieren gegründet.",
+  milestone2: "Erweiterung der Herde und Beginn der Zusammenarbeit mit den ersten Partnern in der Milchindustrie.",
+  milestone3: "Modernisierung der Ausrüstung und Einführung neuer Qualitätsstandards.",
+  milestone4: "Zuverlässiger Partner für zahlreiche Unternehmen in der Milchindustrie.",
+},
+
    cta: {
     kicker: "Bereit für eine zuverlässige Partnerschaft?",
     cta_title: "Kontaktieren Sie uns und wir vereinbaren gemeinsam die Bedingungen einer Zusammenarbeit, die zu Ihren Bedürfnissen passt.",
@@ -86,6 +96,7 @@ export const de = {
     email_placeholder: "E-mail adresse",
     message_placeholder: "Ihre nachricht",
     send_button: "Nachricht senden",
+    sending: "Wird gesendet...",
     success_title: "Nachricht gesendet! 🎉",
     success_desc: "Wir melden uns bald bei Ihnen",
     error_message: "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
