@@ -90,7 +90,7 @@ export default function CTASectionComplex() {
         </div>
 
         {/* Right: map */}
-        <div className="h-[400px] lg:h-full min-h-[400px] rounded-md overflow-hidden border border-white/20">
+        <div className="h-[400px] z-40 lg:h-full min-h-[400px] rounded-md overflow-hidden border border-white/20">
           <MapClient />
         </div>
       </div>
