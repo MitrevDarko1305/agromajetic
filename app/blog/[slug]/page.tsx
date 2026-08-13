@@ -2,8 +2,7 @@ import { posts } from "../../components/blog-posts/posts";
 import { notFound } from "next/navigation";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
-import FounderSectionComplex from "@/app/components/founder-complex";
-import AboutSectionScroll from "@/app/components/about-scroll";
+
 
 export default async function BlogPostPage({
   params,

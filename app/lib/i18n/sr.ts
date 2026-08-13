@@ -57,6 +57,15 @@ export const sr = {
         video_description2: " Kratak uvid u naš svakodnevni rad — od brige o stoci do pripreme za isporuku. Svaka isporuka prolazi kroz isti proces pažnje i kontrole, bez obzira na sezonu ili količinu, kako bismo našim partnerima omogućili dosledan kvalitet na koji mogu da računaju",
        },
 
+       successor: {
+        kicker: "Sledeća generacija",
+        successor_title: "Farma u dobrim rukama",
+        successor_description1: "Odrastao je na farmi i od malih nogu je učio posao uz oca - od jutarnje brige o stoci do organizacije svake isporuke.Danas vodi svakodnevni rad sa istim iskustvom i posvećenošću",
+        successor_description2: "Zahvaljujući godinama provedenim uz oca, dobro poznaje svaki detalj posla - od ishrane i zdravlja životinja do organizacije isporuka. Ta praktična pozadina obezbeđuje da farma nastavi da radi po istom standardu.iz dana u dan.",
+        quote: "Ovo nije samo posao koji sam nasledio to je nešto što radim celog  života, uz oca.",
+
+       },
+
        faq: {
         kicker: "Pitanja i odgovori",
         faq_title1: "Često postavljana",
@@ -118,6 +127,13 @@ export const sr = {
 
         blog3_title: "Zašto je dosledan kvalitet ključan u mlečnoj industriji",
         blog3_description: "Šta partneri očekuju od pouzdanog dobavljača i kako taj kvalitet obezbeđujemo iz sezone u sezonu, bez kompromisa.",
+       },
+
+       /* Blog Individual Pages Dont use it currently  */
+       blogPage: {
+        blogContent1: "Dan na farmi počinje rano. Pre svega, briga o stoci - ishrana, kontrola zdravlja i osnovna nega sprovode se svakog jutra, bez obzira na sezonu ili vremenske uslove. Ishrana se prilagođava potrebama grla, a redovne kontrole omogućavaju da se svaki eventuelni problem primeti na vreme, pre nego što postane ozbiljan.Ovo nije samo rutina - to je osnova na kojoj počiva kvalitet koji naši partneri očekuju. Pored brige o stoci, veliki deo dana posvećen je pripremi za isporuku. Svaka isporuka se planira unapred, uz proveru kvaliteta i usklađivanje sa potrebama partnera. Bez obzira na to da li je u pitanju manja ili veća količina, proces ostaje isti — pažljiv i dosledan.Ono što nas izdvaja nije samo iskustvo od 2016. godine, već doslednost i pristupu - isti standard, svaki dan, bez kompromisa.",
+        blogContent2: "U mlečnoj insdustriji, kvalitet nije  nešto što se dokazuje jednom - dokazuje se svakodnevno. Isporuku sa isporukom. Partneri koji rade sa farmama očekuju predvidljivost: da mleko i stoka koje danas prime budu istog kvaliteta kao i pre mesec dana, i za mesec dana. To znači da doslednost mora biti ugrađena u sam proces rada a ne prepuštena slučaju.Redovna kontrola ishrane, zdravlja životinja i uslova na farmi obezbeđuje da resultat ostane stabilan - nezavisno od sezone, vremenskih prilika ili obima posla. Za partnere u mlečnoj industriji ovakva doslednost direktno utiče na planiranje sopstvene proizvodnje. Nepredvidljiv dobavljač stvara rizik. Pouzdan dobavljač postaje deo stabilnog lanca snabdevanja na koji se može računati. Upravo iz tog razloga, doslednost kvaliteta nije samo naša vrednost - to je uslov za dugoročno partnerstvo.",
+        blogContent3: "Svako partnerstvo počinje jednostavno - kontaktom i razgovorom o potrebama.Nakon prvog kontakta, obično sledi poseta farmi ili razmena uzoraka, kako bi potencijalni partner imao jasnu sliku o tome sa kim sarađuje. Kada se uslovi isporuke i saradnje dogovore,  kreće redovna isporuka - mleka, stoke, ili oboje u zavisnosti od potreba partnera. Ono što sledi nakon toga je najvažniji deo: doslednost. Dugoročna partnerstva se ne grade na jednoj uspešnoj isporuci, već na na desetinama i stotinama isporuka koje prate isti standard. To je razlog zašto većina naših partnerstva traje godinama - poverenje se gradi vremenom, a mi se trudimo da ga svakadnevno opravdamo.Ako tražite dobavljača na kog možete da računate, put obično počinje jednim jednostavnim korakom. - razgovorom.",
        },
 
        footer: {

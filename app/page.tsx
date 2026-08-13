@@ -13,6 +13,7 @@ import { ScrollToTopButton } from "./components/floating-button";
 import { useLanguage } from "./components/language-provider";
 import CTASectionComplex from "./components/cta-complex";
 import MilestoneSection from "./components/milestone";
+import SuccessorSectionComplex from "./components/successor-section";
 
 export default function Page()
   {
@@ -33,6 +34,7 @@ export default function Page()
         secondaryButton={{ label: t.hero.secondaryButton, href: "/how-it-works" }}/>
         <AboutSectionScroll />
         <FounderSectionComplex />
+        <SuccessorSectionComplex />
         <VideoSection />
         <FAQSection />
         <MilestoneSection />

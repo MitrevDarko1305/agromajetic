@@ -44,6 +44,17 @@ export const de = {
     quote: "Jede Lieferung trägt unsere Handschrift — und unser Name steht dafür",
   },
 
+  successor: {
+  kicker: "Die nächste Generation",
+  successor_title: "Der Hof in guten Händen",
+  successor_description1:
+    "Er ist auf dem Hof aufgewachsen und hat die Arbeit von klein auf an der Seite seines Vaters gelernt - von der morgendlichen Versorgung des Viehs bis zur Organisation jeder Lieferung. Heute leitet er den täglichen Betrieb mit derselben Erfahrung und demselben Engagement.",
+  successor_description2:
+    "Dank der Jahre an der Seite seines Vaters kennt er jedes Detail der Arbeit - von der Fütterung und Tiergesundheit bis zur Lieferorganisation. Dieser praktische Hintergrund sorgt dafür, dass der Hof Tag für Tag denselben Standard hält.",
+  quote:
+    "Das ist nicht nur eine Aufgabe, die ich übernommen habe - das ist etwas, das ich mein ganzes Leben lang, gemeinsam mit meinem Vater, mache.",
+},
+
   video: {
     kicker: "Tägliche Arbeit",
     video_title: "Leben auf dem",
@@ -116,6 +127,14 @@ export const de = {
         blog3_title: "Gleichbleibende Qualität",
         blog3_description: "Was Partner von einem zuverlässigen Lieferanten erwarten und wie wir diese Qualität sicherstellen.",
        },
+  
+    /* Blog Individual Pages don't use it currently */
+       blogPage: {
+        blogContent1: "Der Tag auf dem Hof beginnt früh. Vor allem steht die Sorge um das Vieh im Vordergrund – Fütterung, Gesundheitskontrolle und Grundpflege werden jeden Morgen durchgeführt, unabhängig von Jahreszeit oder Wetterbedingungen. Die Fütterung wird an die Bedürfnisse der Tiere angepasst, und regelmäßige Kontrollen ermöglichen es, jedes eventuelle Problem rechtzeitig zu erkennen, bevor es ernst wird. Das ist nicht nur Routine – das ist die Grundlage, auf der die Qualität beruht, die unsere Partner erwarten.Neben der Sorge um das Vieh wird ein großer Teil des Tages der Vorbereitung der Lieferung gewidmet. Jede Lieferung wird im Voraus geplant, mit Qualitätskontrolle und Abstimmung auf die Bedürfnisse der Partner. Ob es sich um eine kleinere oder größere Menge handelt, der Prozess bleibt derselbe – sorgfältig und konsequent.Was uns auszeichnet, ist nicht nur die Erfahrung seit 2016, sondern die Beständigkeit unseres Ansatzes – derselbe Standard, jeden Tag, ohne Kompromisse.",
+        blogContent2: "In der Milchindustrie beweist sich Qualität nicht einmal – sie beweist sich täglich. Lieferung für Lieferung. Partner, die mit Höfen zusammenarbeiten, erwarten Vorhersehbarkeit: dass die Milch und das Vieh, die sie heute erhalten, dieselbe Qualität haben wie vor einem Monat – und auch in einem Monat. Das bedeutet, dass Beständigkeit fest im Arbeitsprozess verankert sein muss und nicht dem Zufall überlassen werden darf.Regelmäßige Kontrolle der Fütterung, der Tiergesundheit und der Bedingungen auf dem Hof sorgt dafür, dass das Ergebnis stabil bleibt – unabhängig von Jahreszeit, Witterung oder Arbeitsumfang. Für Partner in der Milchindustrie wirkt sich diese Beständigkeit direkt auf die Planung ihrer eigenen Produktion aus. Ein unzuverlässiger Lieferant schafft ein Risiko. Ein zuverlässiger Lieferant wird Teil einer stabilen Lieferkette, auf die man sich verlassen kann.Genau aus diesem Grund ist Beständigkeit in der Qualität nicht nur unser Wert – sie ist die Voraussetzung für eine langfristige Partnerschaft.",
+        blogContent3: "Jede Partnerschaft beginnt einfach – mit einem Kontakt und einem Gespräch über die Bedürfnisse. Nach dem ersten Kontakt folgt in der Regel ein Hofbesuch oder ein Musteraustausch, damit sich der potenzielle Partner ein klares Bild davon machen kann, mit wem er zusammenarbeitet. Sobald die Liefer- und Zusammenarbeitsbedingungen vereinbart sind, beginnt die regelmäßige Lieferung – von Milch, Vieh oder beidem, je nach den Bedürfnissen des Partners.Was danach folgt, ist der wichtigste Teil: Beständigkeit. Langfristige Partnerschaften werden nicht auf einer einzigen erfolgreichen Lieferung aufgebaut, sondern auf Dutzenden und Hunderten von Lieferungen, die demselben Standard folgen. Aus diesem Grund halten die meisten unserer Partnerschaften über Jahre hinweg – Vertrauen wird mit der Zeit aufgebaut, und wir bemühen uns, es jeden Tag aufs Neue zu rechtfertigen.Wenn Sie einen Lieferanten suchen, auf den Sie sich verlassen können, beginnt der Weg meist mit einem einfachen Schritt – einem Gespräch.",
+       },
+
    footer: {
        footer_logo: "Agro-Majetić",
        footer_description: "Vieh und Milch, zuverlässig geliefert — seit 2016.",

@@ -6,10 +6,10 @@ export default function FounderSectionComplex() {
   const { t } = useLanguage();
   return (
     <section className="bg-muted pt-16 pb-10 sm:py-24" id="founder">
-      <div className="mx-auto max-w-7xl md:px-6 px-4 lg:px-8 grid gap-10 lg:grid-cols-2 items-center">
+      <div className="mx-auto max-w-6xl md:px-6 px-4 lg:px-8 grid gap-10 lg:grid-cols-2 items-center">
         <div>
           <img
-            src="/Agromajestic-Images/Majetic-Founder.jpeg"
+            src="/Agromajestic-Images/Majetic-Osnivac.png"
             alt="Оснивач"
             className=" object-[center_20px] w-full h-[420px]"
           />

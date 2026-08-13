@@ -84,7 +84,7 @@ export default function VideoSection() {
     </div>
   </div>
 
-   <div className="relative rounded-lg overflow-hidden aspect-video bg-black">
+   <div className="relative  overflow-hidden aspect-video bg-black">
     <video
       ref={videoRef}
       src="/Agromajestic-Images/Agro-Comercial.mp4"
