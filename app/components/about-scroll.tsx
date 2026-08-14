@@ -13,7 +13,7 @@ export default function AboutSectionScroll() {
     { value: "10+", label: t.about.experience },
     {value: "98%", label: t.about.delivery},
     {value: "4", label: t.about.employees},
-    {value: "9.000m²", label: t.about.land},
+    {value: "40 ha", label: t.about.land},
     {value: "30+", label: t.about.bullsSold},
   ];
 
