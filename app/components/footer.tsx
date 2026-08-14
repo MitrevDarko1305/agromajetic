@@ -20,12 +20,20 @@ export default function Footer() {
 
         <div className="text-sm  text-border sm:text-right space-y-1">
           <p>+387 62 414 256</p>
+          <div className="flex flex-col gap-2">
           <a
            href="mailto:info@agromajetic.rs"
            className="hover:text-primary transition-colors"
           >
           Mirzetmicunmajetic@gmail.com
           </a>
+           <a
+           href="mailto:info@agromajetic.rs"
+           className="hover:text-primary transition-colors"
+          >
+          Majeticzilhad4@gmail.com
+          </a>
+          </div>
         </div>
       </div>
 
