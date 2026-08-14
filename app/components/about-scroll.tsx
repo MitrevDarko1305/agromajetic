@@ -19,13 +19,18 @@ export default function AboutSectionScroll() {
 
   const images = [
     "/Agromajestic-Images/Majetic-2.jpeg",
+    "/Agromajestic-Images/Zilhad.png",
     "/Agromajestic-Images/Majetic-3.jpeg",
     "/Agromajestic-Images/Majetic-10.jpeg",
     "/Agromajestic-Images/Majetic-5.jpeg",
+    "/Agromajestic-Images/Bratanca-2.png",
+    "/Agromajestic-Images/Zilhad-2.png",
     "/Agromajestic-Images/Agro-Majetic-3.png",
     "/Agromajestic-Images/Majetic-6.jpeg",
     "/Agromajestic-Images/Agro-Majetic-1.png",
-    
+    "/Agromajestic-Images/Zilhad-Machinery.png",
+    "/Agromajestic-Images/Majetic-17.jpeg",
+    "/Agromajestic-Images/Majetic-Family.png",
   ];
 
   const sectionRef = useRef<HTMLDivElement | null>(null);
@@ -85,7 +90,7 @@ export default function AboutSectionScroll() {
         key={i}
         src={src}
         alt="Фарма"
-        className="md:h-80 h-50 md:w-100 w-60 flex-shrink-0 object-cover"
+        className="md:h-120 h-80 md:w-100 w-60 flex-shrink-0 object-cover"
         />
       ))}
      </div>

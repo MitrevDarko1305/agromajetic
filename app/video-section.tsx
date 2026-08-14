@@ -41,7 +41,7 @@ export default function VideoSection() {
                 key={i}
                 src={src}
                 alt="Фарма"
-                className="h-50 sm:h-44 w-full object-cover"
+                className="h-100 sm:h-44 w-full object-cover"
               />
             ))}
           </div>

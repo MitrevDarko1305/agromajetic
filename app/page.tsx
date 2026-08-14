@@ -15,6 +15,7 @@ import CTASectionComplex from "./components/cta-complex";
 import MilestoneSection from "./components/milestone";
 import SuccessorSectionComplex from "./components/successor-section";
 
+
 export default function Page()
   {
     const { t } = useLanguage ();

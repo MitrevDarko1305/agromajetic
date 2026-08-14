@@ -3,14 +3,14 @@ import { useLanguage } from "./language-provider";
 export default function SuccessorSectionComplex() {
     const { t } =useLanguage();
     return (
-        <section className="bg-muted pt-12 pb-10 sm:pt-12 sm:pb-20" id="successor">
-      <div className="mx-auto max-w-6xl md:px-6 px-4 lg:px-8 grid gap-10 lg:grid-cols-2 items-center">
+        <section className="bg-muted pt-12 pb-1 sm:pt-12 sm:pb-20" id="successor">
+      <div className="mx-auto max-w-6xl md:px-6 px-4 lg:px-8 grid md:gap-10 gap-6 mb-2 sm:mb-0 lg:grid-cols-2 items-center">
          {/* Right: text */}
         <div>
           <h2 className="text-foreground/50 font-medium leading-7">
             {t.successor.kicker}
           </h2>
-          <p className="text-[35px] sm:text-[40px] font-heading font-extrabold sm:mb-10 mb-8 text-foreground">
+          <p className="text-[35px] sm:text-[40px] leading-[1.2] font-heading font-extrabold sm:mb-10 mb-6 text-foreground">
             {t.successor.successor_title}
           </p>
           <p className="text-base leading-7 text-foreground/70 sm:mb-6 mb-8">

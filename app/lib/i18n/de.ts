@@ -48,7 +48,7 @@ export const de = {
   kicker: "Die nächste Generation",
   successor_title: "Der Hof in guten Händen",
   successor_description1:
-    "Er ist auf dem Hof aufgewachsen und hat die Arbeit von klein auf an der Seite seines Vaters gelernt - von der morgendlichen Versorgung des Viehs bis zur Organisation jeder Lieferung. Heute leitet er den täglichen Betrieb mit derselben Erfahrung und demselben Engagement.",
+    "Zilhad Mesud ist auf dem Hof aufgewachsen und hat die Arbeit von klein auf an der Seite seines Vaters gelernt - von der morgendlichen Versorgung des Viehs bis zur Organisation jeder Lieferung. Heute leitet er den täglichen Betrieb mit derselben Erfahrung und demselben Engagement.",
   successor_description2:
     "Dank der Jahre an der Seite seines Vaters kennt er jedes Detail der Arbeit - von der Fütterung und Tiergesundheit bis zur Lieferorganisation. Dieser praktische Hintergrund sorgt dafür, dass der Hof Tag für Tag denselben Standard hält.",
   quote:
