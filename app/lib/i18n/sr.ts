@@ -60,7 +60,7 @@ export const sr = {
        successor: {
         kicker: "Sledeća generacija",
         successor_title: "Farma u dobrim rukama",
-        successor_description1: "Zilhad Mesud, odrastao je na farmi i od malih nogu je učio posao uz oca - od jutarnje brige o stoci do organizacije svake isporuke.Danas vodi svakodnevni rad sa istim iskustvom i posvećenošću",
+        successor_description1: "Zilhad Majetic, odrastao je na farmi i od malih nogu je učio posao uz oca - od jutarnje brige o stoci do organizacije svake isporuke.Danas vodi svakodnevni rad sa istim iskustvom i posvećenošću",
         successor_description2: "Zahvaljujući godinama provedenim uz oca, dobro poznaje svaki detalj posla - od ishrane i zdravlja životinja do organizacije isporuka. Ta praktična pozadina obezbeđuje da farma nastavi da radi po istom standardu.iz dana u dan.",
         quote: "Ovo nije samo posao koji sam nasledio to je nešto što radim celog  života, uz oca.",
 
